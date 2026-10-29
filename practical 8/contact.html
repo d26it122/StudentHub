@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact StudentHub">
+    <title>StudentHub - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div class="logo-text">
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <button class="hamburger" onclick="toggleMenu()"
+            aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Student Profiles</a>
+        <a href="notices.html">Notices</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="feedback.html">Feedback</a>
+        <button id="themeButton" class="theme-button"
+                onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+</nav>
+
+<main class="page-main">
+    <section class="page-intro">
+        <p class="eyebrow">STUDENTHUB · SUPPORT</p>
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? Use the contact form below.</p>
+    </section>
+
+    <section class="form-card">
+        <div class="data-section-heading">
+            <div>
+                <span class="section-number">01</span>
+                <h3>Send a Message</h3>
+            </div>
+            <p>Enter your details and describe your query.</p>
+        </div>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" required
+                       placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" required
+                       placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" required
+                       placeholder="Enter the subject">
+            </div>
+
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" required
+                          placeholder="Write your message"></textarea>
+            </div>
+
+            <button type="submit" class="button">Submit Message</button>
+            <p id="contactStatus" class="form-message"
+               aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub · Your Smart Student Management Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

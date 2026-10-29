@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub student dashboard">
+    <title>StudentHub - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div class="logo-text">
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <button class="hamburger" onclick="toggleMenu()"
+            aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Student Profiles</a>
+        <a href="notices.html">Notices</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="feedback.html">Feedback</a>
+        <button id="themeButton" class="theme-button"
+                onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+</nav>
+
+<main class="page-main">
+    <section class="page-intro">
+        <p class="eyebrow">STUDENTHUB · OVERVIEW</p>
+        <h2>Student Dashboard</h2>
+        <p>Explore your academic information, college activities and student services.</p>
+    </section>
+
+    <section class="dashboard-grid">
+        <article class="dashboard-card">
+            <span class="summary-icon">🎓</span>
+            <h3>Student Profiles</h3>
+            <p>Search student records by name, roll number, course or email.</p>
+            <a href="profile.html" class="button">View Profiles</a>
+        </article>
+
+        <article class="dashboard-card">
+            <span class="summary-icon">📅</span>
+            <h3>College Events</h3>
+            <p>Browse college events and check their details.</p>
+            <a href="event.html" class="button">View Events</a>
+        </article>
+
+        <article class="dashboard-card">
+            <span class="summary-icon">📢</span>
+            <h3>Notices</h3>
+            <p>View announcements, deadlines and important updates.</p>
+            <a href="notices.html" class="button">View Notices</a>
+        </article>
+
+        <article class="dashboard-card">
+            <span class="summary-icon">👨‍🏫</span>
+            <h3>Faculty Directory</h3>
+            <p>Explore faculty information and department details.</p>
+            <a href="faculty.html" class="button">View Faculty</a>
+        </article>
+
+        <article class="dashboard-card">
+            <span class="summary-icon">❓</span>
+            <h3>Frequently Asked Questions</h3>
+            <p>Find answers to common StudentHub questions.</p>
+            <a href="faq.html" class="button">View FAQs</a>
+        </article>
+
+        <article class="dashboard-card">
+            <span class="summary-icon">💬</span>
+            <h3>Feedback</h3>
+            <p>Share your suggestions to improve StudentHub.</p>
+            <a href="feedback.html" class="button">Give Feedback</a>
+        </article>
+    </section>
+
+    <section class="data-section dashboard-info">
+        <div class="data-section-heading">
+            <div>
+                <span class="section-number">01</span>
+                <h3>StudentHub Information</h3>
+            </div>
+            <p>A central place for student information and campus updates.</p>
+        </div>
+
+        <div class="info-grid">
+            <p><strong>Portal:</strong> StudentHub</p>
+            <p><strong>Institution:</strong> CHARUSAT</p>
+            <p><strong>Student Records:</strong> JSON data</p>
+            <p><strong>Platform:</strong> Web-based portal</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub · Your Smart Student Management Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

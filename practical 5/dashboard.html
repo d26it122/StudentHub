@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>StudentHub - Dashboard</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+
+            <div>
+                <h1>StudentHub</h1>
+                <p>Your Smart Student Management Portal</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <div id="navLinks" class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+
+            <button class="theme-button" onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <section class="dashboard-container">
+
+            <h1>Student Dashboard</h1>
+
+            <p>
+                Manage your academic activities
+            </p>
+
+
+            <!-- ================= DASHBOARD CARDS ================= -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- Courses -->
+
+                <div class="dashboard-card">
+
+                    <h2>Courses</h2>
+
+                    <p>
+                        View your enrolled courses and learning materials.
+                    </p>
+
+                    <a href="#" class="button">
+                        View Courses
+                    </a>
+
+                </div>
+
+
+                <!-- Assignments -->
+
+                <div class="dashboard-card">
+
+                    <h2>Assignments</h2>
+
+                    <p>
+                        Check pending and completed assignments.
+                    </p>
+
+                    <a href="#" class="button">
+                        View Assignments
+                    </a>
+
+                </div>
+
+
+                <!-- Study Materials -->
+
+                <div class="dashboard-card">
+
+                    <h2>Study Materials</h2>
+
+                    <p>
+                        Access notes and study materials.
+                    </p>
+
+                    <a href="#" class="button">
+                        View Materials
+                    </a>
+
+                </div>
+
+
+                <!-- Events -->
+
+                <div class="dashboard-card">
+
+                    <h2>Events</h2>
+
+                    <p>
+                        Check upcoming college events.
+                    </p>
+
+                    <a href="events.html" class="button">
+                        View Events
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= STUDENT INFORMATION ================= -->
+
+            <section class="student-info">
+
+                <h2>Student Information</h2>
+
+                <div class="info-grid">
+
+                    <p>
+                        <strong>Name:</strong> Student
+                    </p>
+
+                    <p>
+                        <strong>Course:</strong> B.Tech IT
+                    </p>
+
+                    <p>
+                        <strong>Semester:</strong> 3rd Semester
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong> Active
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> StudentHub
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

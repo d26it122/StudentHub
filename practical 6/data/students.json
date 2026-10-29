@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Dhruvi Patel",
+        "course": "B.Tech IT",
+        "year": 2,
+        "skills": "Java, HTML, CSS"
+    },
+    {
+        "id": 2,
+        "name": "Aarav Shah",
+        "course": "B.Tech CSE",
+        "year": 2,
+        "skills": "Python, AI"
+    },
+    {
+        "id": 3,
+        "name": "Riya Mehta",
+        "course": "B.Tech IT",
+        "year": 3,
+        "skills": "JavaScript, React"
+    },
+    {
+        "id": 4,
+        "name": "Krish Patel",
+        "course": "B.Tech CSE",
+        "year": 1,
+        "skills": "C, C++"
+    }
+]

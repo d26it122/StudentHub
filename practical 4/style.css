@@ -1,0 +1,1548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fc;
+    color: #222;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+header {
+    background: #0b3d91;
+    color: white;
+}
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5%;
+}
+/* =====================================================
+   FULL WIDTH HOME BANNER
+   ===================================================== */
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FULL IMAGE */
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* TEXT OVER IMAGE */
+
+.banner-text {
+    position: absolute;
+
+    top: 50%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    width: 42%;
+    max-width: 550px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+
+.banner-text h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.banner-text p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.logo-area img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+}
+
+
+.logo-area h1 {
+    font-size: 28px;
+}
+
+
+.logo-area p {
+    font-size: 14px;
+}
+
+
+nav {
+    background: #062b63;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    gap: 15px;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex: 1;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+.nav-links a:hover {
+    background: #0b3d91;
+}
+
+
+
+
+.hamburger {
+    display: none;
+    background: white;
+    color: #062b63;
+    border: none;
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.theme-button {
+    background: white;
+    color: #062b63;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.notification {
+    background: #fff3cd;
+    color: #664d03;
+    padding: 12px 5%;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.notification-close {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 15px;
+    color: inherit;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.button {
+    background: #0b3d91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.button:hover {
+    background: #062b63;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.intro h2 {
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+/* =====================================================
+   FEATURES SECTION
+   ===================================================== */
+
+.features {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    text-align: center;
+}
+
+
+/* FEATURES HEADING */
+
+.features h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+/* CARDS HORIZONTAL */
+
+.card-container {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    width: 100%;
+}
+
+
+/* INDIVIDUAL CARD */
+
+.card {
+    flex: 1;
+
+    max-width: 330px;
+
+    min-height: 160px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* CARD TITLE */
+
+.card h3 {
+    color: #0b3d91;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+
+/* CARD TEXT */
+
+.card p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+/* =====================================================
+   SLIDER
+===================================================== */
+
+.slider-container {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.slider-container h2 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    min-height: 250px;
+}
+
+
+.slide {
+    display: none;
+    position: relative;
+    min-height: 250px;
+    background: #eaf1fb;
+}
+
+
+.slide.active {
+    display: block;
+}
+
+
+.slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.slide-content {
+    padding: 35px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.slide-content h3 {
+    color: #0b3d91;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* Slider buttons */
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+
+.slider-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.prev {
+    left: 10px;
+}
+
+
+.next {
+    right: 10px;
+}
+
+
+
+/* =====================================================
+   COLLAPSIBLE FAQ
+   ===================================================== */
+
+.faq-section {
+    background: white;
+
+    width: 90%;
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+
+.faq-section h2 {
+    text-align: center;
+
+    color: #0b3d91;
+
+    margin-bottom: 30px;
+}
+
+
+.faq-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.faq-item {
+    border: 1px solid #d9e2ef;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: white;
+}
+
+
+.faq-question {
+    width: 100%;
+
+    border: none;
+
+    background: #f4f8fc;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #0b3d91;
+
+    text-align: left;
+}
+
+
+.faq-question:hover {
+    background: #eaf2fb;
+}
+
+
+.faq-icon {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.faq-answer {
+    display: none;
+
+    padding: 0 20px;
+
+    background: white;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+.faq-item.active .faq-answer {
+    display: block;
+
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* FAQ search */
+
+.faq-search {
+    margin: 20px 0;
+}
+
+
+.faq-search input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+/* FAQ item */
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+/* FAQ question */
+
+.faq-question {
+    padding: 15px;
+    background: #f5f7fa;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.faq-question:hover {
+    background: #eaf1fb;
+}
+
+
+.faq-icon {
+    font-size: 20px;
+    color: #0b3d91;
+}
+
+
+/* FAQ answer */
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    position: relative;
+    background: white;
+    width: 90%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.modal-content h2 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #062b63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background: #121212;
+    color: #eeeeee;
+}
+
+
+body.dark-mode header {
+    background: #181818;
+}
+
+
+body.dark-mode nav {
+    background: #000000;
+}
+
+
+body.dark-mode .intro,
+body.dark-mode .card,
+body.dark-mode .slider-container,
+body.dark-mode .faq-section {
+    background: #1e1e1e;
+    color: #eeeeee;
+}
+
+
+body.dark-mode .intro h2,
+body.dark-mode .card h3,
+body.dark-mode .slider-container h2,
+body.dark-mode .faq-section h2,
+body.dark-mode .slide-content h3 {
+    color: #8ab4f8;
+}
+
+
+body.dark-mode .slide {
+    background: #252525;
+}
+
+
+body.dark-mode .faq-question {
+    background: #252525;
+    color: white;
+}
+
+
+body.dark-mode .faq-answer {
+    background: #1e1e1e;
+    color: white;
+}
+
+
+body.dark-mode .faq-search input {
+    background: #252525;
+    color: white;
+    border-color: #555;
+}
+
+
+body.dark-mode .modal-content {
+    background: #1e1e1e;
+    color: white;
+}
+
+
+body.dark-mode .modal-content h2 {
+    color: #8ab4f8;
+}
+
+
+body.dark-mode .theme-button {
+    background: #222;
+    color: white;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .logo-area {
+        padding: 12px;
+    }
+
+
+    .logo-area img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .logo-area h1 {
+        font-size: 22px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+
+    /* Show hamburger */
+
+    .hamburger {
+        display: block;
+    }
+
+
+    /* Hide navigation initially */
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    /* Show navigation when active */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    .nav-links a {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    .theme-button {
+        margin-left: auto;
+    }
+
+
+    .banner {
+        height: 300px;
+    }
+
+
+    .banner-text {
+        left: 5%;
+        right: 5%;
+        max-width: none;
+        padding: 18px;
+    }
+
+
+    .banner-text h2 {
+        font-size: 25px;
+    }
+
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+
+    .slide {
+        min-height: 220px;
+    }
+
+
+    .slide img {
+        height: 220px;
+    }
+
+
+    .slide-content {
+        min-height: 220px;
+        padding: 25px;
+    }
+
+}
+/* =====================================================
+   STUDENTHUB - COMMON PAGE DESIGN
+   ===================================================== */
+
+/* Main page background */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f7fc;
+    color: #111;
+}
+
+
+/* =====================================================
+   COMMON PAGE CONTAINER
+   ===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* =====================================================
+   ABOUT PAGE
+   ===================================================== */
+
+.about-container {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    margin-bottom: 45px;
+}
+
+.about-container h1 {
+    color: #0b3d91;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.about-container > p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-container h2 {
+    color: #0b3d91;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.about-container p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   ABOUT - WHAT STUDENTHUB PROVIDES
+   ===================================================== */
+
+.about-features {
+    margin-top: 40px;
+}
+
+.about-features h2 {
+    text-align: center;
+    color: #0b3d91;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* Three cards in horizontal row */
+
+.about-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
+
+
+/* Individual cards */
+
+.about-card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    min-height: 130px;
+}
+
+.about-card h3 {
+    color: #0b3d91;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+.dashboard-container {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+
+
+.dashboard-container h1 {
+    color: #0b3d91;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+
+.dashboard-container > p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Dashboard cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* Individual dashboard card */
+
+.dashboard-card {
+    background: #f8fbff;
+    border: 1px solid #dce8f5;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+
+.dashboard-card h2 {
+    color: #0b3d91;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.dashboard-card p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* Dashboard buttons */
+
+.dashboard-card .button,
+.dashboard-card a {
+    display: inline-block;
+    background: #0b3d91;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+
+.dashboard-card .button:hover,
+.dashboard-card a:hover {
+    background: #062c6b;
+}
+
+
+/* =====================================================
+   STUDENT INFORMATION
+   ===================================================== */
+
+.student-information {
+    margin-top: 30px;
+    background: #f8fbff;
+    border: 1px solid #dce8f5;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+
+.student-information h2 {
+    color: #0b3d91;
+    margin-top: 0;
+}
+
+
+.student-information p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+
+/* =====================================================
+   EVENTS PAGE
+   ===================================================== */
+
+.events-container {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+
+
+.events-container h1 {
+    color: #0b3d91;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+
+.events-container > p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Event cards */
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.event-card {
+    background: #f8fbff;
+    border: 1px solid #dce8f5;
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+
+.event-card h2 {
+    color: #0b3d91;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.event-card h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+
+.event-card p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.event-date {
+    display: inline-block;
+    background: #0b3d91;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 94%;
+    }
+
+    .about-card-container {
+        flex-direction: column;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .event-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   DARK MODE - ALL PAGES
+   ===================================================== */
+
+/* Main page background */
+body.dark-mode {
+    background: #111827;
+    color: #f1f5f9;
+}
+
+
+/* =====================================================
+   ALL NORMAL TEXT
+   ===================================================== */
+
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode label {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   HEADINGS
+   ===================================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #60a5fa;
+}
+
+
+/* =====================================================
+   ABOUT PAGE
+   ===================================================== */
+
+body.dark-mode .about-container {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .about-container h1,
+body.dark-mode .about-container h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .about-container p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   ABOUT FEATURE CARDS
+   ===================================================== */
+
+body.dark-mode .about-card {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    border: 1px solid #374151;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .about-card h3 {
+    color: #60a5fa;
+}
+
+body.dark-mode .about-card p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   DASHBOARD
+   ===================================================== */
+
+body.dark-mode .dashboard-container {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .dashboard-container h1 {
+    color: #60a5fa;
+}
+
+body.dark-mode .dashboard-container > p {
+    color: #d1d5db;
+}
+
+
+/* Dashboard cards */
+
+body.dark-mode .dashboard-card {
+    background: #273449;
+    color: #f1f5f9;
+
+    border: 1px solid #374151;
+
+    box-shadow: none;
+}
+
+body.dark-mode .dashboard-card h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .dashboard-card p {
+    color: #e5e7eb;
+}
+
+
+/* Dashboard buttons */
+
+body.dark-mode .dashboard-card a,
+body.dark-mode .dashboard-card .button {
+    background: #2563eb;
+    color: white;
+}
+
+body.dark-mode .dashboard-card a:hover,
+body.dark-mode .dashboard-card .button:hover {
+    background: #3b82f6;
+}
+
+
+/* =====================================================
+   STUDENT INFORMATION
+   ===================================================== */
+
+body.dark-mode .student-information {
+    background: #273449;
+    color: #f1f5f9;
+
+    border: 1px solid #374151;
+}
+
+body.dark-mode .student-information h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .student-information p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   EVENTS PAGE
+   ===================================================== */
+
+body.dark-mode .events-container {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .events-container h1 {
+    color: #60a5fa;
+}
+
+body.dark-mode .events-container > p {
+    color: #d1d5db;
+}
+
+
+/* Event cards */
+
+body.dark-mode .event-card {
+    background: #273449;
+    color: #f1f5f9;
+
+    border: 1px solid #374151;
+
+    box-shadow: none;
+}
+
+body.dark-mode .event-card h2,
+body.dark-mode .event-card h3 {
+    color: #60a5fa;
+}
+
+body.dark-mode .event-card p {
+    color: #e5e7eb;
+}
+
+
+/* Event date */
+
+body.dark-mode .event-date {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =====================================================
+   ORIGINAL INTRO SECTION
+   ===================================================== */
+
+body.dark-mode .intro {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    border-color: #374151;
+}
+
+body.dark-mode .intro h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .intro p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   ORIGINAL FEATURE CARDS
+   ===================================================== */
+
+body.dark-mode .features {
+    color: #f1f5f9;
+}
+
+body.dark-mode .features h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .card {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    border: 1px solid #374151;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .card h3 {
+    color: #60a5fa;
+}
+
+body.dark-mode .card p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   SLIDER
+   ===================================================== */
+
+body.dark-mode .slider-container {
+    background: #1f2937;
+    color: #f1f5f9;
+}
+
+body.dark-mode .slide-content {
+    background: rgba(17, 24, 39, 0.9);
+    color: #f1f5f9;
+}
+
+body.dark-mode .slide-content h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .slide-content p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   MODAL
+   ===================================================== */
+
+body.dark-mode .modal-content {
+    background: #1f2937;
+    color: #f1f5f9;
+}
+
+body.dark-mode .modal-content h2 {
+    color: #60a5fa;
+}
+
+body.dark-mode .modal-content p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   FAQ
+   ===================================================== */
+
+body.dark-mode .faq-item {
+    background: #1f2937;
+    color: #f1f5f9;
+
+    border-color: #374151;
+}
+
+body.dark-mode .faq-question {
+    color: #60a5fa;
+}
+
+body.dark-mode .faq-answer {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   FORMS / INPUTS
+   ===================================================== */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #273449;
+    color: #f1f5f9;
+
+    border: 1px solid #4b5563;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+body.dark-mode footer {
+    background: #0b1220;
+    color: #e5e7eb;
+}
+
+body.dark-mode footer p {
+    color: #e5e7eb;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+body.dark-mode button,
+body.dark-mode .button {
+    color: white;
+}
+
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+
+body.dark-mode a {
+    color: #60a5fa;
+}
+
+body.dark-mode a:hover {
+    color: #93c5fd;
+}

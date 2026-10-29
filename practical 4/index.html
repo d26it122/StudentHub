@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>StudentHub - Home</title>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+
+            <div class="logo-text">
+
+                <h1>StudentHub</h1>
+
+                <p>
+                    Your Smart Student Management Portal
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger" onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <!-- Navigation Links -->
+        <div id="navLinks" class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="faculty.html">Faculty</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="admin.html">Admin</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="feedback.html">Feedback</a>
+
+
+            <!-- Theme Switch -->
+            <button
+                class="theme-button"
+                onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         NOTIFICATION
+         ===================================================== -->
+
+    <div id="notification" class="notification">
+
+        🔔 Welcome to StudentHub!
+        Check your courses, assignments and upcoming events.
+
+        <button
+            class="notification-close"
+            onclick="closeNotification()">
+
+            ×
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         FULL WIDTH HOME BANNER
+         ===================================================== -->
+
+    <section class="banner">
+
+        <!-- IMPORTANT:
+             Keep banner.jpg in the SAME folder as index.html
+        -->
+
+        <img
+            src="banner.jpg"
+            alt="CHARUSAT Campus">
+
+        <div class="banner-text">
+
+            <h2>
+                Welcome to StudentHub
+            </h2>
+
+            <p>
+                Manage your courses, assignments,
+                events and study materials in one place.
+            </p>
+
+            <a
+                href="login.html"
+                class="button">
+
+                Get Started
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             ABOUT
+             ================================================= -->
+
+        <section class="intro">
+
+            <h2>
+                About StudentHub
+            </h2>
+
+            <p>
+                StudentHub is a digital platform where students
+                can manage courses, assignments, study materials,
+                notices and events easily.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             FEATURES
+             ================================================= -->
+
+        <section class="features">
+
+            <h2>
+                Our Features
+            </h2>
+
+            <div class="card-container">
+
+                <div class="card">
+
+                    <h3>
+                        Courses
+                    </h3>
+
+                    <p>
+                        View your enrolled courses and
+                        learning materials.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Assignments
+                    </h3>
+
+                    <p>
+                        Check and submit assignments online.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Events
+                    </h3>
+
+                    <p>
+                        Stay updated with college events
+                        and activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRACTICAL 4
+             IMAGE / CONTENT SLIDER
+             ================================================= -->
+
+        <section class="slider-container">
+
+            <!-- Slide 1 -->
+
+            <div class="slide active">
+
+                <img
+                    src="banner.jpg"
+                    alt="CHARUSAT Campus">
+
+                <div class="slide-content">
+
+                    <h2>
+                        Learn and Manage
+                    </h2>
+
+                    <p>
+                        Manage your courses, assignments
+                        and study materials easily through
+                        StudentHub.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slide 2 -->
+
+            <div class="slide">
+
+                <div class="slide-content">
+
+                    <h2>
+                        Stay Updated
+                    </h2>
+
+                    <p>
+                        Get information about college events,
+                        notices and activities in one place.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slide 3 -->
+
+            <div class="slide">
+
+                <div class="slide-content">
+
+                    <h2>
+                        Student Friendly Portal
+                    </h2>
+
+                    <p>
+                        StudentHub provides a simple and
+                        organized platform for students,
+                        faculty and administrators.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slider Buttons -->
+
+            <div class="slider-buttons">
+
+                <button onclick="changeSlide(-1)">
+                    ❮ Previous
+                </button>
+
+                <button onclick="changeSlide(1)">
+                    Next ❯
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MODAL POPUP
+             ================================================= -->
+
+        <section class="intro">
+
+            <h2>
+                StudentHub Information
+            </h2>
+
+            <p>
+                Click the button below to view more information.
+            </p>
+
+            <br>
+
+            <button
+                class="button"
+                onclick="openModal()">
+
+                Open Information
+
+            </button>
+
+        </section>
+
+
+        <!-- =================================================
+             MODAL
+             ================================================= -->
+
+        <div
+            id="myModal"
+            class="modal">
+
+            <div class="modal-content">
+
+                <span
+                    class="modal-close"
+                    onclick="closeModal()">
+
+                    &times;
+
+                </span>
+
+                <h2>
+                    About StudentHub
+                </h2>
+
+                <br>
+
+                <p>
+                    StudentHub is a smart student management
+                    portal designed to help students manage
+                    courses, assignments, study materials,
+                    events and notices.
+                </p>
+
+                <br>
+
+                <button
+                    class="button"
+                    onclick="closeModal()">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             COLLAPSIBLE FAQ
+             ================================================= -->
+
+        <section class="faq-section">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <div class="faq-container">
+
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            What is StudentHub?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            StudentHub is a student management
+                            portal used to manage courses,
+                            assignments, events and study
+                            materials.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can students check assignments?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Students can check and manage
+                            their assignments through the
+                            StudentHub portal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can I use dark mode?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Click the Dark Mode button in
+                            the navigation bar to switch between
+                            light and dark themes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Is the website responsive?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. StudentHub is designed to work
+                            on desktop, tablet and mobile screens.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> StudentHub
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback - StudentHub</title>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+<nav>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div id="navLinks" class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+
+        <button class="theme-button" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</nav>
+<main>
+
+    <section class="intro">
+
+        <h2>Give Your Feedback</h2>
+
+        <form>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="feedback">Your Feedback:</label><br>
+
+            <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

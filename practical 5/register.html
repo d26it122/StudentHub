@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Register - StudentHub</title>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header>
+
+    <div class="logo-area">
+
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+
+        <div class="logo-text">
+
+            <h1>StudentHub</h1>
+
+            <p>Your Smart Student Management Portal</p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<nav>
+
+    <button class="hamburger" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div id="navLinks" class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="register.html">Register</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="admin.html">Admin</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="feedback.html">Feedback</a>
+
+        <button class="theme-button" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     NOTIFICATION
+     ===================================================== -->
+
+<div id="notification" class="notification">
+
+    🔔 Welcome to StudentHub! Register to access student services.
+
+    <button class="notification-close"
+            onclick="closeNotification()">
+        ×
+    </button>
+
+</div>
+
+
+<!-- =====================================================
+     REGISTRATION SECTION
+     ===================================================== -->
+
+
+<main>
+
+    <section class="registration-section">
+
+        <div class="registration-container">
+
+            <div class="registration-heading">
+                <h2>Student Registration</h2>
+
+                <p>
+                    Create your StudentHub account
+                </p>
+            </div>
+
+            <div id="registerMessage" class="register-message"></div>
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        name="studentName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <small id="nameError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="studentEmail">Email</label>
+
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        name="studentEmail"
+                        placeholder="example@gmail.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <small id="emailError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        id="mobile"
+                        name="mobile"
+                        placeholder="10 digit mobile number"
+                        maxlength="10"
+                        autocomplete="tel"
+                        required
+                    >
+
+                    <small id="mobileError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <small id="passwordError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Re-enter password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <small id="confirmPasswordError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+
+                    <select id="course" name="course" required>
+
+                        <option value="">Select Course</option>
+                        <option value="B.Tech IT">B.Tech IT</option>
+                        <option value="B.Tech CSE">B.Tech CSE</option>
+                        <option value="B.Tech CE">B.Tech CE</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MBA">MBA</option>
+
+                    </select>
+
+                    <small id="courseError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="yearOfStudy">Year</label>
+
+                    <select id="yearOfStudy" name="yearOfStudy" required>
+
+                        <option value="">Select Year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+
+                    </select>
+
+                    <small id="yearError" class="error-message"></small>
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <div class="gender-options">
+
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+
+                    </div>
+
+                    <small id="genderError" class="error-message"></small>
+
+                </div>
+
+
+                <div class="terms-group">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                        >
+
+                        I agree to the
+                        <strong>Terms and Conditions</strong>
+
+                    </label>
+
+                    <small id="termsError" class="error-message"></small>
+
+                </div>
+
+
+                <div class="registration-buttons">
+
+                    <button
+                        type="submit"
+                        class="button register-button">
+                        Create Account
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset-button">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <p>
+        © <span id="year"></span> StudentHub
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

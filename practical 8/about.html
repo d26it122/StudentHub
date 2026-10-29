@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About StudentHub">
+    <title>StudentHub - About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div class="logo-text">
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <button class="hamburger" onclick="toggleMenu()"
+            aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Student Profiles</a>
+        <a href="notices.html">Notices</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="feedback.html">Feedback</a>
+        <button id="themeButton" class="theme-button"
+                onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+</nav>
+
+<main class="page-main">
+    <section class="page-intro">
+        <p class="eyebrow">DISCOVER STUDENTHUB</p>
+        <h2>About StudentHub</h2>
+        <p>Learn about our student management portal and its features.</p>
+    </section>
+
+    <section class="content-panel">
+        <h3>Our Purpose</h3>
+        <p>
+            StudentHub is a web-based student management portal designed
+            to organize student information and make academic resources
+            easier to access.
+        </p>
+
+        <h3>What Can You Do?</h3>
+        <div class="feature-list">
+            <article class="feature-item">
+                <h4>🎓 Student Profiles</h4>
+                <p>Search student records and view course information.</p>
+                <a href="profile.html">Explore student profiles</a>
+            </article>
+
+            <article class="feature-item">
+                <h4>📅 College Events</h4>
+                <p>Browse event information and upcoming activities.</p>
+                <a href="events.html">Explore events</a>
+            </article>
+
+            <article class="feature-item">
+                <h4>📢 Notices</h4>
+                <p>View announcements and important updates.</p>
+                <a href="notices.html">Read notices</a>
+            </article>
+
+            <article class="feature-item">
+                <h4>❓ Help and Support</h4>
+                <p>Find answers to common questions about the portal.</p>
+                <a href="faq.html">Read FAQs</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub · Your Smart Student Management Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

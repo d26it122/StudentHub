@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>StudentHub - Home</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="charusat_logo.jpg" alt="StudentHub Logo">
+
+            <div>
+                <h1>StudentHub</h1>
+                <p>Your Smart Student Management Portal</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <div id="navLinks" class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="events.html">Events</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+            <a href="faq.html">FAQ</a>
+            <a href="feedback.html">Feedback</a>
+
+            <button
+                id="themeButton"
+                class="theme-button"
+                onclick="toggleTheme()">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="hero-section">
+
+            <!-- Campus image -->
+            <img
+                src="banner.jpg"
+                alt="CHARUSAT Campus"
+                class="hero-image"
+            >
+
+            <!-- Dark content box -->
+            <div class="hero-content">
+
+                <h2>Welcome to StudentHub</h2>
+
+                <p>
+                    Manage your courses, assignments, events and study
+                    materials in one place.
+                </p>
+
+                <a href="register.html" class="button">
+                    Get Started
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="content-box home-about">
+
+            <h2>About StudentHub</h2>
+
+            <p>
+                StudentHub is a digital platform where students can
+                manage courses, assignments, study materials, notices
+                and events easily.
+            </p>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="home-features">
+
+            <h2>What StudentHub Provides</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <h3>Easy Management</h3>
+
+                    <p>
+                        Manage your academic information easily in one place.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>Assignments</h3>
+
+                    <p>
+                        Keep track of pending and completed assignments.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>Study Materials</h3>
+
+                    <p>
+                        Access notes and useful study materials easily.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>College Events</h3>
+
+                    <p>
+                        Stay updated with upcoming college events and activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> StudentHub
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ - StudentHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img
+                src="charusat_logo.jpg"
+                alt="CHARUSAT Logo">
+
+            <div class="logo-text">
+
+                <h1>StudentHub</h1>
+
+                <p>
+                    Your Smart Student Management Portal
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <button
+            class="hamburger"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+
+        <div
+            id="navLinks"
+            class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="register.html">Register</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="admin.html">Admin</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="feedback.html">Feedback</a>
+
+
+            <button
+                class="theme-button"
+                onclick="toggleTheme()">
+
+                🌙 Dark Mode
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <main>
+
+        <section class="faq-page">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="faq-heading">
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+                <p>
+                    Find answers to common questions
+                    about StudentHub.
+                </p>
+
+            </div>
+
+
+            <!-- FAQ CONTAINER -->
+
+            <div class="faq-container">
+
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            What is StudentHub?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            StudentHub is a student management
+                            portal that helps students manage
+                            their academic activities in one place.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Who can use StudentHub?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Students, teachers and administrators
+                            can use the StudentHub portal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can students manage assignments?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Students can check their
+                            pending and completed assignments
+                            through StudentHub.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can students view college events?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Students can view upcoming
+                            college events and activities
+                            on the Events page.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            How can I create a StudentHub account?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Go to the Register page, enter your
+                            student information and create your
+                            StudentHub account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 6 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        onclick="toggleFAQ(this)">
+
+                        <span>
+                            Can I access study materials?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. StudentHub provides students
+                            with access to useful study materials
+                            and learning resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> StudentHub
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

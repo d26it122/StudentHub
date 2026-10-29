@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Database Registration</title>
+</head>
+
+<body>
+
+    <h1>Student Registration - MySQL</h1>
+
+    <form action="process_registration_db.php" method="POST">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="mobile">Mobile:</label><br>
+        <input type="text" id="mobile" name="mobile" required>
+        <br><br>
+
+        <label for="course_id">Course:</label><br>
+        <select id="course_id" name="course_id" required>
+            <option value="" selected disabled>Select Course</option>
+            <option value="1">Information Technology</option>
+            <option value="2">Computer Science</option>
+            <option value="3">Computer Engineering</option>
+        </select>
+
+        <br><br>
+
+        
+<label for="year">Year:</label><br>
+<select id="year" name="year" required>
+    <option value="" selected disabled>Select Year</option>
+    <option value="1">First Year</option>
+    <option value="2">Second Year</option>
+    <option value="3">Third Year</option>
+    <option value="4">Fourth Year</option>
+</select>
+
+
+        <br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="" selected disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Register Student</button>
+
+    </form>
+
+</body>
+</html>

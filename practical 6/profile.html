@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Student Profiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+            <div class="logo-text">
+                <h1>StudentHub</h1>
+                <p>Your Smart Student Management Portal</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div id="navLinks" class="nav-links">
+            <a href="index.html" data-page="index.html">Home</a>
+            <a href="about.html" data-page="about.html">About</a>
+            <a href="register.html" data-page="register.html">Register</a>
+            <a href="login.html" data-page="login.html">Login</a>
+            <a href="dashboard.html" data-page="dashboard.html">Dashboard</a>
+            <a href="faculty.html" data-page="faculty.html">Faculty</a>
+            <a href="events.html" data-page="event.html">Events</a>
+            <a href="profile.html" data-page="profile.html">Student Profiles</a>
+            <a href="notices.html" data-page="notices.html">Notices</a>
+            <a href="faq.html" data-page="faq.html">FAQ</a>
+            <a href="contact.html" data-page="contact.html">Contact</a>
+            <a href="admin.html" data-page="admin.html">Admin</a>
+            <a href="feedback.html" data-page="feedback.html">Feedback</a>
+            <button id="themeButton" class="theme-button" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <section class="page-intro">
+            <p class="eyebrow">PRACTICAL 6 · FETCH API</p>
+            <h2>Student Profiles</h2>
+            <p>Search student records by name, roll number, course, semester or email.</p>
+        </section>
+
+        <section class="data-portal" id="students">
+            <div class="data-summary">
+                <div class="summary-card">
+                    <span class="summary-icon">🎓</span>
+                    <div><p>Total Students</p><strong id="studentCount">0</strong></div>
+                </div>
+            </div>
+
+            <section class="data-section">
+                <div class="data-section-heading">
+                    <div><span class="section-number">01</span><h3>Student Profiles</h3></div>
+                    <p>Student records are loaded from data/students.json.</p>
+                </div>
+
+                <div class="data-controls">
+                    <input id="studentSearch" type="search"
+                           placeholder="Search name, roll number, email...">
+                    <select id="studentFilter">
+                        <option value="all">All courses</option>
+                    </select>
+                    <select id="studentSort">
+                        <option value="name-asc">Name: A–Z</option>
+                        <option value="name-desc">Name: Z–A</option>
+                    </select>
+                    <select id="studentPageSize">
+                        <option value="5">5 per page</option>
+                        <option value="10">10 per page</option>
+                        <option value="20">20 per page</option>
+                    </select>
+                </div>
+
+                <div id="studentsContainer" class="data-results" aria-live="polite">
+                    Loading student profiles...
+                </div>
+                <div id="studentsPagination" class="practical6-pagination"></div>
+            </section>
+
+            <p class="portal-note">
+                Student data is fetched dynamically from the external JSON file.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> StudentHub · Your Smart Student Management Portal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

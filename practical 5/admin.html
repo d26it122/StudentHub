@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin - StudentHub</title>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div>
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div id="navLinks" class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+
+        <button class="theme-button" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</nav>
+
+<main>
+
+    <section class="intro">
+
+        <h2>Admin Panel</h2>
+
+        <p>Manage students, courses and events.</p>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Students</h3>
+                <p>View and manage student information.</p>
+            </div>
+
+            <div class="card">
+                <h3>Courses</h3>
+                <p>Manage available courses.</p>
+            </div>
+
+            <div class="card">
+                <h3>Events</h3>
+                <p>Manage college events.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

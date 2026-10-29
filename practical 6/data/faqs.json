@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "How can I register for an event?",
+        "answer": "Select the event and complete the registration form."
+    },
+    {
+        "id": 2,
+        "question": "Where can I see event details?",
+        "answer": "All event details are displayed in the Events section."
+    },
+    {
+        "id": 3,
+        "question": "Can first year students participate?",
+        "answer": "Yes, students can participate according to the event eligibility."
+    }
+]

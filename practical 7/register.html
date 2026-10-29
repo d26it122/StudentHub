@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for StudentHub">
+
+    <title>StudentHub - Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Registration form layout */
+        .form-card {
+            height: auto !important;
+            min-height: 0;
+            overflow: visible !important;
+            padding: 35px;
+            margin-bottom: 30px;
+        }
+
+        #registerForm {
+            display: block;
+            width: 100%;
+        }
+
+        .registration-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin: 30px 0;
+        }
+
+        .registration-grid .form-group {
+            min-width: 0;
+            margin-bottom: 0;
+        }
+
+        .registration-grid label,
+        .extra-field label {
+            display: block;
+            margin-bottom: 9px;
+            font-weight: 600;
+        }
+
+        .registration-grid input,
+        .registration-grid select,
+        .extra-field input,
+        .extra-field select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff;
+            color: #222;
+        }
+
+        .registration-grid input:focus,
+        .registration-grid select:focus {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+        }
+
+        .extra-field {
+            margin-bottom: 22px;
+        }
+
+        .terms-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 25px 0;
+        }
+
+        .terms-row input {
+            margin-top: 5px;
+        }
+
+        .terms-row label {
+            line-height: 1.6;
+        }
+
+        .password-help {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #64748b;
+            margin-top: 8px;
+        }
+
+        .register-submit {
+            display: inline-block;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #174ea6;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .register-submit:hover {
+            background: #123b80;
+        }
+
+        .form-footer {
+            margin-top: 25px;
+        }
+
+        @media (max-width: 700px) {
+            .form-card {
+                padding: 22px;
+            }
+
+            .registration-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+
+        <div class="logo-text">
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <button class="hamburger"
+            onclick="toggleMenu()"
+            aria-label="Toggle navigation"
+            aria-expanded="false">☰</button>
+
+    <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Student Profiles</a>
+        <a href="notices.html">Notices</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="feedback.html">Feedback</a>
+
+        <button id="themeButton"
+                class="theme-button"
+                onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+</nav>
+
+<main class="page-main">
+
+    <section class="page-intro">
+        <p class="eyebrow">STUDENTHUB · ACCOUNT</p>
+        <h2>Student Registration</h2>
+        <p>Create your StudentHub account by entering your details.</p>
+    </section>
+
+    <section class="form-card">
+
+        <div class="data-section-heading">
+            <div>
+                <span class="section-number">01</span>
+                <h3>Create Account</h3>
+            </div>
+
+            <p>Fill in all the required fields.</p>
+        </div>
+
+        <!-- Registration form connected to PHP -->
+        <form id="registerForm"
+              action="process.php"
+              method="POST" >
+
+            <div class="registration-grid">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+                    <input type="text"
+                           id="studentName"
+                           name="studentName"
+                           placeholder="Enter your full name"
+                           pattern="[A-Za-z ]+"
+                           title="Enter letters and spaces only"
+                           required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+                <!-- Roll Number -->
+                <div class="form-group">
+                    <label for="roll">Roll Number</label>
+                    <input type="text"
+                           id="roll"
+                           name="roll"
+                           placeholder="Enter your roll number"
+                           required>
+                </div>
+
+                <!-- Mobile -->
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel"
+                           id="mobile"
+                           name="mobile"
+                           placeholder="Enter 10-digit mobile number"
+                           pattern="[6-9][0-9]{9}"
+                           maxlength="10"
+                           title="Enter a valid 10-digit Indian mobile number"
+                           required>
+                </div>
+
+                <!-- Course -->
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="B.Tech IT">B.Tech IT</option>
+                        <option value="B.Tech CSE">B.Tech CSE</option>
+                        <option value="B.Tech CE">B.Tech CE</option>
+                        <option value="B.Tech ECE">B.Tech ECE</option>
+                    </select>
+                </div>
+
+                <!-- Semester -->
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="1">1st Semester</option>
+                        <option value="2">2nd Semester</option>
+                        <option value="3">3rd Semester</option>
+                        <option value="4">4th Semester</option>
+                        <option value="5">5th Semester</option>
+                        <option value="6">6th Semester</option>
+                        <option value="7">7th Semester</option>
+                        <option value="8">8th Semester</option>
+                    </select>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Create a password"
+                           minlength="8"
+                           autocomplete="new-password"
+                           required>
+
+                    <p class="password-help">
+                        Use at least 8 characters, including an uppercase
+                        letter, lowercase letter, number and special character.
+                    </p>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="Re-enter your password"
+                           minlength="8"
+                           autocomplete="new-password"
+                           required>
+                </div>
+
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="terms-row">
+                <input type="checkbox"
+                       id="terms"
+                       name="terms"
+                       value="accepted"
+                       required>
+
+                <label for="terms">
+                    I accept the Terms and Conditions.
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="register-submit">
+                Create Account
+            </button>
+
+            <p id="registerMessage"
+               class="form-message"
+               aria-live="polite"></p>
+
+        </form>
+
+        <p class="form-footer">
+            Already registered?
+            <a href="login.html">Login here</a>.
+        </p>
+
+        <p class="form-footer">
+            Want to see the registered students?
+            <a href="students.php" class="btn">View Registered Students</a>.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        © <span id="year"></span>
+        StudentHub · Your Smart Student Management Portal
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+    // Set the footer year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+    // Check password confirmation before submitting to PHP
+    document.getElementById("registerForm").addEventListener(
+        "submit",
+        function (event) {
+
+            const password =
+                document.getElementById("password").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            const passwordPattern =
+                /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}$/;
+
+            if (!passwordPattern.test(password)) {
+                event.preventDefault();
+
+                alert(
+                    "Password must contain at least 8 characters, " +
+                    "an uppercase letter, a lowercase letter, " +
+                    "a number and a special character."
+                );
+
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                event.preventDefault();
+                alert("Passwords do not match.");
+                return;
+            }
+
+            // Do not prevent submission here.
+            // The browser submits valid data to process.php.
+        }
+    );
+</script>
+
+</body>
+</html>

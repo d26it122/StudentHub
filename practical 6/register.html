@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for StudentHub">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="charusat_logo.jpg" alt="CHARUSAT Logo">
+        <div class="logo-text">
+            <h1>StudentHub</h1>
+            <p>Your Smart Student Management Portal</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <button class="hamburger" onclick="toggleMenu()"
+            aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="events.html">Events</a>
+        <a href="profile.html">Student Profiles</a>
+        <a href="notices.html">Notices</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="feedback.html">Feedback</a>
+        <button id="themeButton" class="theme-button"
+                onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+</nav>
+
+<main class="page-main">
+    <section class="page-intro">
+        <p class="eyebrow">STUDENTHUB · ACCOUNT</p>
+        <h2>Student Registration</h2>
+        <p>Create your StudentHub account by entering your details.</p>
+    </section>
+
+    <section class="form-card">
+        <div class="data-section-heading">
+            <div>
+                <span class="section-number">01</span>
+                <h3>Create Account</h3>
+            </div>
+            <p>Fill in all the required fields.</p>
+        </div>
+
+        <form id="registerForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roll">Roll Number</label>
+                    <input type="text" id="roll" name="roll"
+                           placeholder="Enter roll number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option>B.Tech IT</option>
+                        <option>B.Tech CSE</option>
+                        <option>B.Tech CE</option>
+                        <option>B.Tech ECE</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="semester">Semester</label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option value="1">1st Semester</option>
+                        <option value="2">2nd Semester</option>
+                        <option value="3">3rd Semester</option>
+                        <option value="4">4th Semester</option>
+                        <option value="5">5th Semester</option>
+                        <option value="6">6th Semester</option>
+                        <option value="7">7th Semester</option>
+                        <option value="8">8th Semester</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Minimum 6 characters"
+                           minlength="6" required>
+                </div>
+            </div>
+
+            <button type="submit" class="button">Create Account</button>
+            <p id="registerMessage" class="form-message"
+               aria-live="polite"></p>
+        </form>
+
+        <p class="form-footer">
+            Already registered? <a href="login.html">Login here</a>.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> StudentHub · Your Smart Student Management Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "Hackathon 2026",
+        "category": "Technical",
+        "date": "2026-10-05",
+        "venue": "CSPIT Auditorium",
+        "organizer": "CSI Club"
+    },
+    {
+        "id": 2,
+        "title": "Web Development Workshop",
+        "category": "Workshop",
+        "date": "2026-10-10",
+        "venue": "Computer Lab 2",
+        "organizer": "Web Club"
+    },
+    {
+        "id": 3,
+        "title": "Coding Competition",
+        "category": "Competition",
+        "date": "2026-10-15",
+        "venue": "CSPIT Lab",
+        "organizer": "Coding Club"
+    },
+    {
+        "id": 4,
+        "title": "AI Awareness Seminar",
+        "category": "Seminar",
+        "date": "2026-10-20",
+        "venue": "Main Hall",
+        "organizer": "Data Science Club"
+    },
+    {
+        "id": 5,
+        "title": "Cyber Security Workshop",
+        "category": "Workshop",
+        "date": "2026-10-25",
+        "venue": "Cyber Lab",
+        "organizer": "CyberKavach"
+    },
+    {
+        "id": 6,
+        "title": "Tech Quiz",
+        "category": "Competition",
+        "date": "2026-11-01",
+        "venue": "Seminar Hall",
+        "organizer": "IT Department"
+    },
+    {
+        "id": 7,
+        "title": "Cloud Computing Seminar",
+        "category": "Seminar",
+        "date": "2026-11-05",
+        "venue": "CSPIT Auditorium",
+        "organizer": "Cloud Club"
+    },
+    {
+        "id": 8,
+        "title": "Java Programming Workshop",
+        "category": "Workshop",
+        "date": "2026-11-10",
+        "venue": "Computer Lab 1",
+        "organizer": "Programming Club"
+    }
+]
