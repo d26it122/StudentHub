@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student Registration</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>Create Account</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+</nav>
+
+
+
+<main>
+<section>
+<h2>Student Registration Form</h2>
+<form onsubmit="return validateRegister()">
+<label>Name:</label>
+
+<input 
+type="text"
+id="name"
+placeholder="Enter your name">
+
+<label>Email:</label>
+
+<input 
+type="email"
+placeholder="Enter email">
+
+<label>Password:</label>
+
+<input 
+type="password"
+placeholder="Create password">
+
+<label>Course:</label>
+<select>
+<option>BCA</option>
+<option>BBA</option>
+<option>B.Tech</option>
+
+</select>
+
+<button type="submit">
+Register
+</button>
+</form>
+</section>
+</main>
+<footer>
+<p>StudentHub</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
